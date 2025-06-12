@@ -3,18 +3,21 @@ This is a class project, dedicated to track our summer vacation adventures and a
 
 HOW TO CLONE AND PUSH TO REPOSITORY:
 
-    Open VS CODE and open a folder in witch you want to clone
-    Open terminal (Use Git Bash as your terminal in VS Code)
+Open VS CODE and open a folder in witch you want to clone
+Open terminal (Use Git Bash as your terminal in VS Code)
 
-    Cloning a Repository:
+Cloning a Repository:
 
-        git clone https://github.com/WhiteSage1/GJSM.git
+    git clone https://github.com/WhiteSage1/GJSM.git
 
-        After cloning, reopen the cloned project in VS Code
+After cloning, reopen the cloned project in VS Code
 
-    Pushing Changes:
+Pushing Changes:
 
-        git init
-        git add .
-        git commit -m "add your comments..."
-        git push
+    git init
+    
+    git add .
+
+    git commit -m "add your comments..."
+
+    git push
