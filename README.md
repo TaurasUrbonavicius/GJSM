@@ -10,7 +10,9 @@ Cloning a Repository:
 
     git clone https://github.com/WhiteSage1/GJSM.git
 
-After cloning, reopen the cloned project in VS Code
+    code GJSM
+
+After cloning, clode the old VS Code aplication
 
 Pushing Changes:
 
