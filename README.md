@@ -12,7 +12,7 @@ Cloning a Repository:
 
     code GJSM
 
-After cloning, clode the old VS Code aplication
+After cloning, close the old VS Code application
 
 Pushing Changes:
 
