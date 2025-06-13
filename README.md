@@ -24,10 +24,10 @@ Pushing Changes:
 
     git push
 
-In MAIN page you can find a carousel, you need to put a pic in a place dedicated for you.
-It does not matter what pic you put in it, as long as you understand that it will represent you.
-Pictures must be 1:1! 
-(Use this [link](https://www.adobe.com/express/feature/image/resize). Choose STANDART square 1:1)
-It would be for the best if you saved and uplowded a pic from a folder dedicated for that purpuse (like... img/ or people/yourName_x/... or enything else.)
+
+In MAIN page you can find a carousel. You need to put two pictures in places dedicated to you.
+It does not matter what picture you put in it, as long as you understand that it will represent you.
+Pictures must be 1:1! (Use this [link](https://www.adobe.com/express/feature/image/resize). Choose STANDARD square 1:1)
+It would be for the best if you saved and uploaded a picture from a folder dedicated to that purpose (like... img/ or people/yourName_x/... or anything else.)
 
 In MAIN page you can find cards dedicaded for you!
