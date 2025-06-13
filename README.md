@@ -27,7 +27,20 @@ Pushing Changes:
 
 
 
-On the MAIN page you can find a carousel. You need to put two pictures in places dedicated to you.
+On the MAIN page you can find a carousel. You need to put two pictures in places dedicated to you:
+1     BEREIŠA BENAS
+2     BRUŽAS SIMAS
+3     KORSAKAS DOVYDAS
+4     LYSENKA LUKAS
+5     MACIULEVIČIUS EMAS
+6     MATUKAITIS MATAS
+7     OGORODNIKAS PAULIUS
+8     PALŠYS TITAS
+9     PUKINSKAS JOKŪBAS
+10     URBONAVIČIUS TAURAS
+11     VEGYS PAULIUS
+12     ŽIBAS DOMANTAS
+13     BAGDONAS IGNAS
 It does not matter what picture you put in it, as long as you understand that it will represent you.
 Pictures must be 1:1! (Use this [link](https://www.adobe.com/express/feature/image/resize). Choose STANDARD square 1:1)
 It would be for the best if you saved and uploaded a picture from a folder dedicated to that purpose (like... img/ or people/yourName_x/... or anything else.)
