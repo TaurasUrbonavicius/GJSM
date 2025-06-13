@@ -25,9 +25,15 @@ Pushing Changes:
     git push
 
 
-In MAIN page you can find a carousel. You need to put two pictures in places dedicated to you.
+On the MAIN page you can find a carousel. You need to put two pictures in places dedicated to you.
 It does not matter what picture you put in it, as long as you understand that it will represent you.
 Pictures must be 1:1! (Use this [link](https://www.adobe.com/express/feature/image/resize). Choose STANDARD square 1:1)
 It would be for the best if you saved and uploaded a picture from a folder dedicated to that purpose (like... img/ or people/yourName_x/... or anything else.)
 
-In MAIN page you can find cards dedicaded for you!
+On the MAIN page you can find cards dedicated to you! You need to put two pictures in places dedicated to you.
+Pictures must be 2:3! (Use this [link](https://www.adobe.com/express/feature/image/resize). Choose STANDARD square 2:3)
+Also, there is a button (element <a>) to lead the user to your MAIN page, so please link your MAIN page to that button.
+Dedecated cards are for you. You can change the text in them, text size, etc.
+It's not recommended that you touch the styling of your card!
+
+Please do not damage or do any other actions which may or might harm other people's projects!
