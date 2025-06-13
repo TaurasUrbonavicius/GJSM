@@ -25,6 +25,8 @@ Pushing Changes:
     git push
 
 
+
+
 On the MAIN page you can find a carousel. You need to put two pictures in places dedicated to you.
 It does not matter what picture you put in it, as long as you understand that it will represent you.
 Pictures must be 1:1! (Use this [link](https://www.adobe.com/express/feature/image/resize). Choose STANDARD square 1:1)
