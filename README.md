@@ -23,3 +23,10 @@ Pushing Changes:
     git commit -m "add your comments..."
 
     git push
+
+In MAIN page you can find a carousel, you need to put a pic in a place dedicated for you.
+It does not matter what pic you put in it, as long as you understand that it will represent you.
+Pictures must be 1:1! 
+(Use [text](https://www.adobe.com/express/feature/image/resize)) It would be for the best if you saved and uplowded that pic from a folder dedicated for that purpuse (like... img/ or people/yourName_x/... or enything else.)
+
+In MAIN page you can find cards dedicaded for you!
