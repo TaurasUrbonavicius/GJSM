@@ -27,25 +27,25 @@ a {
 }
 
 h1 {
-    font-size: clamp(1.4rem, 1vw + 1.8rem, 3.2rem);
+    font-size: clamp(2rem, 1vw + 1.8rem, 3.2rem);
 }
 
 h2 {
-    font-size: clamp(1.2rem, 1vw + 1.5rem, 3rem);
+    font-size: clamp(1.8rem, 1vw + 1.5rem, 3rem);
 }
 
 h3 {
-    font-size: clamp(1rem, 1vw + 1rem, 2.5rem);
+    font-size: clamp(1.5rem, 1vw + 1rem, 2.5rem);
 }
 
 h4 {
     margin: 0 0 1rem 0;
-    font-size: clamp(0.8rem, 1vw + 0.2rem, 1.2rem);
+    font-size: clamp(1rem, 1vw + 0.2rem, 1.2rem);
 }
 
 h5 {
     margin: 0 0 1rem 0;
-    font-size: clamp(0.6rem, 1vw + 0.175rem, 0.8rem);
+    font-size: clamp(0.8rem, 1vw + 0.175rem, 0.8rem);
 }
 
 p {
@@ -95,6 +95,9 @@ p {
 .bottom-gap-30 {
     margin-bottom: clamp(32vh, 35vw, 50vh);
 }
+.bottom-gap-5 {
+    margin-bottom: clamp(5vh, 5vw, 5vh);
+}
 
 #section2 {
     scroll-margin: 20vh;
@@ -108,6 +111,7 @@ p {
     scroll-margin: 100vh;
 }
 
+
 .top-bar {
     width: clamp(20rem, calc(100% - 2rem), 25rem);
     height: 35px;
@@ -120,6 +124,7 @@ p {
     top: 1.5rem;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 999;
 }
 
 .top-button {
@@ -129,7 +134,7 @@ p {
     padding: 1% 1.1%;
     color: white;
     text-align: center;
-    font-size: clamp(0.2rem, 1vw + 0.5rem, 1rem);
+    font-size: clamp(1rem, 1vw + 0.5rem, 1rem);
     border-radius: 0.5rem;
     transition: color 0.3s ease, background-color 0.3s ease;
 }
@@ -249,7 +254,54 @@ p {
 }
 
 .flex-item-1-4 {
-    background-image: linear-gradient(75deg, #141417 40%, rgba(0, 0, 0, 0)), url("Images/osu.jfif");
+    background-image: linear-gradient(75deg, #141417 40%, rgba(0, 0, 0, 0)), url("Images/anime1.png");
+}
+/*---*/
+
+.flex-container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 1rem;
+}
+
+.flex-container-2>* {
+    flex: 1 1 calc(33% - 3rem);
+    max-width: calc(33% - 3rem);
+}
+
+@media (max-width: 600px) {
+    .flex-container-2>* {
+        flex: 1 1 100%;
+        min-width: 100%;
+    }
+}
+
+.item-3 {
+    background-color: #141417;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    border: rgb(65, 65, 65) solid 1px;
+    overflow: hidden;
+    box-shadow: rgba(255, 255, 255, 0.034) -0.1rem -0.1rem 1rem;
+    max-width: 33%;
+    margin-top: 1rem;
+    max-height: 30rem;
+}
+
+.card-img{
+    width: 100%;
+    max-height: fit-content;
+    border-radius: 0.5rem 0.5rem 0 0;
+    filter: brightness(0.8);
+}
+
+.item-3 *:not(img):not(button) {
+  padding: 0.5rem 1rem 0 1rem;
+}
+.item-3 > button {
+  margin:1rem;
 }
 
 /*---*/
@@ -297,7 +349,8 @@ p {
 }
 
 .item-2>.button-1,
-.item-1>.button-1 {
+.item-1>.button-1,
+.item-3>.button-1 {
     margin-top: auto;
 }
 

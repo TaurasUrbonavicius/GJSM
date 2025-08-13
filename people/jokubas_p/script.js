@@ -32,7 +32,7 @@ let Information = {
     },
     "Osu!Mania": {
         title: "Osu!Mania",
-        description: "I've been playing osu!mania quite a lot this summer, my skills improved significantly. I was playing 3.4* maps now I can confidentaly play 4.7* maps like in the video. I also reached Top #80 in Lithuania as of now (Top #52,000 globally). ",
+        description: "I've been playing osu!mania quite a lot this summer, my skills improved significantly. I used to play 3.4* maps now I can confidently play 4.7* maps like in the video. I also reached Top #80 in Lithuania and Top #52,000 globally.",
         images: {
             "image1": "Images/osu.jfif"
         },
@@ -45,7 +45,8 @@ let Information = {
         description: "Me and my family decided to go stand-up paddleboarding for the first time. It was a great way to connect with nature and stay active. We rented the paddleboards and had a lot of fun on the water.",
         images: {
             "image1": "Images/boat.jfif",
-            "image2": "Images/boat2.jfif"
+            "image2": "Images/boat2.jfif",
+            "image3": "Images/boat3.jpg"
         }
     },
     "Walks in the forest": {
@@ -58,11 +59,36 @@ let Information = {
     },
     "Nephew's Birthday": {
         title: "Nephew's Birthday",
-        description: "I celebrated my nephew's 2nd birthday on August 10th we had a fun party near a lake, there were a lot of guests and delicious food.",
+        description: "I celebrated my nephew's 2nd birthday on August 10th we had a fun party near a lake, there were a lot of guests and delicious food. There were mostly kids ranging from 1 to 5 years old.",
         images: {
             "image1": "Images/lake.jpg",
             "image2": "Images/lake2.jpg",
             "image3": "Images/lake3.jpg"
+        }
+    },
+    "War thunder": {
+        title: "War thunder",
+        description: "I played a lot of War Thunder during the summer break, after an entire year and miserable 800 hours I managed to reach top tier in both air and ground forces in Sweden.",
+        images: {
+            "image1": "Images/war_thunder1.jpg",
+            "image2": "Images/war_thunder2.jpg",
+            "image3": "Images/war_thunder3.png"
+        }
+    },
+    "Anime": {
+        title: "Anime",
+        description: "I watched a lot of anime during the summer break, explored new genres that I never watched before. I watched 6 new series which are - Bocchi the rock, I want to eat your pancreas, Look back, Girls last tour, To your Eternity and Eighty Six. My favorite one was Eighty Six.",
+        images: {
+            "image1": "Images/anime1.png",
+            "image2": "Images/anime2.jpg"
+        }
+    },
+    "Elden Ring": {
+        title: "Elden Ring",
+        description: "My friend got me Elden ring as a birthday gift, and both of us have been playing it together. After a couple of days we've finally beat the game, we plan on playing it again soon.",
+        images: {
+            "image1": "Images/elden_ring1.png",
+            "image2": "Images/elden_ring2.jpg"
         }
     }
 };
@@ -138,7 +164,7 @@ document.querySelectorAll("#OpenReadMore").forEach(button => { // Shoutout to ch
             } else if (item.type === 'video') {
                 const video = document.createElement('video');
                 video.src = item.src;
-                video.className = 'absolute block h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2';
+                video.className = 'absolute block h-full w-full';
                 video.controls = true;
                 itemDiv.appendChild(video);
             }
@@ -245,13 +271,20 @@ updateNavLinks();
 
 // Improves the spacing when user zooms out
 const blablabla = document.getElementsByClassName("bottom-gap-30");
+const blablabla2 = document.getElementsByClassName("title");
 
 function adjustMargins(zoom) {
-    const baseMarginRem = 30;
+    const baseMarginRem = 45;
     const newMarginRem = baseMarginRem * zoom;
 
+    const baseMarginRem2 = 40;
+    const newMarginRem2 = baseMarginRem2 * zoom;
+
     Array.from(blablabla).forEach(i => {
-        i.style.marginBottom = `${newMarginRem}vw`;
+        i.style.marginBottom = `${newMarginRem}vh`;
+    });
+    Array.from(blablabla2).forEach(i => {
+        i.style.marginTop = `${newMarginRem2}vh`;
     });
 }
 
