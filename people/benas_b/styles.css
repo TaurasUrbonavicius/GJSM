@@ -1,3 +1,41 @@
-body {
-    background-color: red;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid gray;
+}
+
+.intro {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    line-height: 1.5;
 }
