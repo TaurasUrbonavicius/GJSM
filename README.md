@@ -22,7 +22,11 @@ Pushing Changes:
 
     git commit -m "add your comments..."
 
-    git push
+    git branch -m main
+
+    git remote add origin https://github.com/WhiteSage1/GJSM.git
+
+    git push -u origin main
 
 
 
