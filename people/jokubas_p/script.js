@@ -32,7 +32,7 @@ let Information = {
     },
     "Osu!Mania": {
         title: "Osu!Mania",
-        description: "I've been playing osu!mania quite a lot this summer, my skills improved significantly. I used to play 3.4* maps now I can confidently play 4.7* maps like in the video. I also reached Top #80 in Lithuania and Top #52,000 globally.",
+        description: "I've been playing osu!mania quite a lot this summer, my skills improved significantly. I used to play 3.4* maps now I can confidently play 4.7* maps like in the video. I also reached Top #80 in Lithuania and Top #50,000 globally.",
         images: {
             "image1": "Images/osu.jfif"
         },
@@ -77,7 +77,7 @@ let Information = {
     },
     "Anime": {
         title: "Anime",
-        description: "I watched a lot of anime during the summer break, explored new genres that I never watched before. I watched 6 new series which are - Bocchi the rock, I want to eat your pancreas, Look back, Girls last tour, To your Eternity and Eighty Six. My favorite one was Eighty Six.",
+        description: "I watched a lot of anime during the summer break, explored new genres that I never watched before. I watched 7 new series which are - Bocchi the rock, I want to eat your pancreas, Look back, Girls last tour, To your Eternity and Eighty Six and lastly Dan Da Dan. My favorite one was Eighty Six.",
         images: {
             "image1": "Images/anime1.png",
             "image2": "Images/anime2.jpg"
@@ -85,7 +85,7 @@ let Information = {
     },
     "Elden Ring": {
         title: "Elden Ring",
-        description: "My friend got me Elden ring as a birthday gift, and both of us have been playing it together. After a couple of days we've finally beat the game, we plan on playing it again soon.",
+        description: "My friend got me Elden ring as a birthday gift, and both of us have been playing it together. After a couple of weeks we've finally beat the game. So far I've beaten the game 3 times.",
         images: {
             "image1": "Images/elden_ring1.png",
             "image2": "Images/elden_ring2.jpg"
@@ -117,6 +117,7 @@ ReadMore.addEventListener("click", function (e) {
 document.querySelectorAll("#OpenReadMore").forEach(button => { // Shoutout to chat gpt for fixing the damn carousel
     button.addEventListener("click", function () {
         ReadMore.style.display = "block";
+        ReadMore.classList.add("fade-in")
         ReadMoreTitle.innerHTML = Information[this.name].title;
         ReadMoreDescription.innerHTML = Information[this.name].description;
 
