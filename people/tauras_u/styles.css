@@ -1,7 +1,55 @@
 body {
-    background-color: black;
+    background: url(img/background.jpg);
+    background-size: cover;
+}
+
+.box {
+    background: rgba(0, 0, 0, 0.50);
+    height: 50%;
+    width: 75%;
+    margin: auto;
+    color: white;
+    padding: auto;
+    text-align: center;
+    border-radius: 2vw;
+}
+
+h1 {
+    font-size: 1.5vw;
+    padding-top: 1vw;
+    padding-bottom: 1.5vw;
 }
 
 p {
-    color:white;
+    font-size: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.first {
+    font-size: 20px;
+    font-size: 0.8vw;
+}
+
+img {
+    width: 20vw;
+}
+
+.back {
+    text-decoration: none;
+    color: rgb(22, 247, 1);
+}
+
+.setup {
+    width: 50vw;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+}
+
+.bla {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
