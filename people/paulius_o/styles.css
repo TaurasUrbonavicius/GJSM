@@ -1,3 +1,256 @@
+@font-face {
+    font-family: pokemon;
+    src: url(font/PKMN\ RBYGSC.ttf);
+}
+
 body {
-    background-color: red;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: pokemon;
+}
+
+.pokedex {
+    display: flex;
+    background: rgb(168, 12, 12);
+    border: 10px solid rgb(133, 5, 5);
+    border-radius: 8px;
+}
+
+.leftDex, .rightDex {
+    padding: 20px;
+    position: relative;
+}
+
+.leftDex {
+    width: 500px;
+    height: 650px;
+    border-right: 10px solid rgb(133, 5, 5);
+}
+
+.blueLight {
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(circle at 30% 30%, rgb(85, 204, 255), rgb(0, 34, 136));
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.light {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    top: 12px;
+    left: 94px;
+}
+
+.redLight, .yellowLight, .greenLight, .redLightOne, .redLightTwo {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.redLight, .redLightOne, .redLightTwo, .biggerRedLight {
+    background: radial-gradient(circle at 30% 30%, rgb(255, 1, 1), rgb(65, 1, 1));
+}
+
+.yellowLight, .bigYellowLight {
+    background: radial-gradient(circle at 30% 30%, rgb(245, 208, 3), rgb(71, 61, 2));
+}
+
+.greenLight {
+    background: radial-gradient(circle at 30% 30%, rgb(31, 235, 4), rgb(8, 58, 1));
+}
+
+.display {
+    position: relative;
+    top: 80px;
+    width: 500px;
+    height: 360px;
+    background: white;
+    border-radius: 4px;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 9% 100%, 0 87%, 0 0);
+    border-right: 4px solid rgb(139, 139, 139);
+    border-top: 4px solid rgb(139, 139, 139);
+}
+
+.redLights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width:  500px;
+    height: 30px;
+    background: rgb(255, 255, 255);
+}
+
+.redLightOne, .redLightTwo {
+    position: relative;
+    top: 7px;
+}
+
+.screen {
+    position: inherit;
+    width: 400px;
+    height: 260px;
+    top: 15px;
+    left: 50px;
+    background: rgb(27, 27, 27);
+    border-radius: 4px;
+    color: white;
+}
+
+.screen p {
+    margin: 0;
+    padding: 10px;
+}
+
+.screen img {
+    position: inherit;
+    width: 200px;
+    left: 200px;
+    bottom: 75px;
+    margin: 0;
+}
+
+.biggerRedLight {
+    position: inherit;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    left: 50px;
+    top: 25px;
+}
+
+.roundButton {
+    position: inherit;
+    width: 55px;
+    height: 55px;
+    top: 100px;
+    background: rgb(29, 39, 29);
+    border-radius: 50%;
+    border-right: solid 3px black;
+    border-top: solid 2px black;
+}
+
+.littleScreen {
+    position: inherit;
+    width: 155px;
+    height: 70px;
+    top: 75px; 
+    left: 120px;
+    background: rgb(47, 112, 47);
+    border: solid 1px rgb(0, 44, 0);
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+}
+
+.dPad {
+    position: inherit;
+    width: 95px;
+    height: 95px;
+    bottom: 15px;
+    left: 350px;
+    background: rgb(29, 39, 29);
+    clip-path: polygon(35% 0, 65% 0, 65% 35%, 100% 35%, 100% 65%, 65% 65%, 65% 100%, 35% 100%, 35% 65%, 0 65%, 0 35%, 35% 35%);
+}
+
+.rightDex {
+    width: 500px;
+    border-left: 10px solid rgb(121, 4, 4)
+}
+
+.wideScreen {
+    position: inherit;
+    width: 500px;
+    height: 100px;
+    top: 75px;
+    background: rgb(27, 27, 27);
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+}
+
+.numberButtons {
+    position: inherit;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 500px;
+    top: 85px;
+    background-color: rgb(23, 90, 190);
+    border-radius: 20%;
+}
+
+.numberButtons button {
+    height: 95px;
+    background: rgb(24, 139, 255);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10%;
+    border: solid 5px rgb(23, 90, 190);
+}
+
+.numberButtons button:hover {
+    background: rgb(22, 123, 224)
+}
+
+.whiteButtons {
+    position: inherit;
+    top: 115px;
+    display: flex;
+}
+
+.whiteButtonOne, .whiteButtonTwo {
+    width: 80px;
+    height: 50px;
+    background: white;
+    border-top: solid 5px rgb(179, 179, 179);
+}
+
+.whiteButtonOne {
+    border-radius: 4px 0 0 4px;
+    border-right: 2px solid rgb(71, 71, 71);
+}
+
+.whiteButtonTwo {
+    border-radius: 0 4px 4px 0;
+    border-right: 5px solid rgb(179, 179, 179)
+}
+
+.bigYellowLight {
+    position: inherit;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    top: 93px;
+    left: 427px;
+}
+
+.blackButtons {
+    position: inherit;
+    top: 125px;
+    gap: 80px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blackButtonOne, .blackButtonTwo {
+    width: 180px;
+    height: 65px;
+    background: rgb(27, 27, 27);
+    border-radius: 4px;
 }

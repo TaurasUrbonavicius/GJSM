@@ -7,7 +7,57 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="pokedex">
+        <div class="leftDex">
+            <div class="blueLight"></div>
+            <div class="light">
+                <div class="redLight"></div>
+                <div class="yellowLight"></div>
+                <div class="greenLight"></div>
+            </div>
+            <div class="display">
+                <div class="redLights">
+                    <div class="redLightOne"></div>
+                    <div class="redLightTwo"></div>
+                </div>
+                <div class="screen">
+                    <p id="name"></p>
+                    <p id="type"></p>
+                    <p id="height"></p>
+                    <p id="weight"></p>
+                    <img id="pic" src="">
+                </div>
+                <div class="biggerRedLight"></div>
+            </div>
+            <div class="roundButton"></div>
+            <div class="littleScreen" id="display"></div>
+            <div class="dPad"></div>
+        </div>
+        <div class="rightDex">
+            <div class="wideScreen" id="input"></div>
+            <div class="numberButtons">
+                <button onclick="addN(1)">1</button>
+                <button onclick="addN(2)">2</button>
+                <button onclick="addN(3)">3</button>
+                <button onclick="addN(4)">4</button>
+                <button onclick="addN(5)">5</button>
+                <button onclick="addN(6)">6</button>
+                <button onclick="addN(7)">7</button>
+                <button onclick="addN(8)">8</button>
+                <button onclick="addN(9)">9</button>
+                <button onclick="addN(0)">0</button>
+            </div>
+            <div class="whiteButtons">
+                <div class="whiteButtonOne" onclick="deleteN()"></div>
+                <div class="whiteButtonTwo" onclick="search()"></div>
+            </div>
+            <div class="bigYellowLight"></div>
+            <div class="blackButtons">
+                <div class="blackButtonOne"></div>
+                <div class="blackButtonTwo"></div>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
