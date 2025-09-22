@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bratislava</title>
+    <link rel="stylesheet" href="bratislava.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="nav__left"> 
+            <a href="index.html">
+                <img class="nav_logo" src="Images/SummerLogo.png" alt="">
+            </a>
+        </div>
+
+        <div class="nav__right">
+            <img src="Images/avatar.JPG" class="nav_avatar" alt="">
+        </div>
+
+    </div>
+
+<div class="information">
+    <h1 style="text-align:center">Bratislava</h1>
+    <br>
+    <p style="text-align:center">9th August 2025</p>
+    <br>
+    <p>Bratislava the capital of Slovakia. Honestly can't even say much as I didn't see much of this city but the castle looked gorgeous and the city reminded me of Polish medieval cities</p>
+</div>
+
+<h2 style="text-align:center">Bratislava</h2>
+
+<div class="container main-show">
+  <div class="mySlides">
+    <div class="numbertext">1 / 3</div>
+    <img src="Images/Slovakia/IMG_0873.JPG" style="width:30%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 3</div>
+    <img src="Images/Slovakia/IMG_0874.JPG" style="width:30%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 3</div>
+    <img src="Images/Slovakia/IMG_0875.JPG" style="width:30%">
+  </div>
+
+
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+<div class="container">    
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Images/Slovakia/IMG_0873.JPG" style="width:100%" onclick="currentSlide(1)" alt="Flags">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Slovakia/IMG_0874.JPG" style="width:100%" onclick="currentSlide(2)" alt="More of the same flags">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Slovakia/IMG_0875.JPG" style="width:100%" onclick="currentSlide(3)" alt="Oh look! Not flags!">
+    </div>
+  </div>
+</div>
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shithole</title>
+    <link rel="stylesheet" href="warsaw.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="nav__left"> 
+            <a href="index.html">
+                <img class="nav_logo" src="Images/SummerLogo.png" alt="">
+            </a>
+        </div>
+
+        <div class="nav__right">
+            <img src="Images/avatar.JPG" class="nav_avatar" alt="">
+        </div>
+
+    </div>
+
+<div class="information">
+    <h1 style="text-align:center">Warsaw</h1>
+    <br>
+    <p style="text-align:center">10th August 2025</p>
+    <br>
+    <p>FUCK THIS PLACE <br> Here look at animals instead</p>
+</div>
+
+<h2 style="text-align:center">Warsaw</h2>
+
+<div class="container main-show">
+  <div class="mySlides">
+    <div class="numbertext">1 / 5</div>
+    <img src="Images/Poland/IMG_0876.JPG" style="width:30%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 5</div>
+    <img src="Images/Poland/IMG_0879.JPG" style="width:30%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 5</div>
+    <img src="Images/Poland/IMG_0881.JPG" style="width:30%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 5</div>
+    <img src="Images/Poland/IMG_0884.JPG" style="width:30%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">5 / 5</div>
+    <img src="Images/Poland/IMG_0886.JPG" style="width:30%">
+  </div>
+
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+<div class="container">    
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Images/Poland/IMG_0876.JPG" style="width:100%" onclick="currentSlide(1)" alt="Erasmus+">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Poland/IMG_0879.JPG" style="width:100%" onclick="currentSlide(2)" alt="https://youtu.be/ojULkWEUsPs?si=dmC4d3taRzOyumOt">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Poland/IMG_0881.JPG" style="width:100%" onclick="currentSlide(3)" alt="Bird">
+    </div>
+      <div class="column">
+      <img class="demo cursor" src="Images/Poland/IMG_0884.JPG" style="width:100%" onclick="currentSlide(4)" alt="Birb">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="Images/Poland/IMG_0886.JPG" style="width:100%" onclick="currentSlide(5)" alt="This one broke the 4th wall">
+    </div>
+  </div>
+</div>
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</body>
+</html>

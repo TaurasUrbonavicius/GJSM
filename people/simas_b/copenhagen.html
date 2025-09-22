@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copenhagen</title>
+    <link rel="stylesheet" href="copenhagen.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="nav__left"> 
+            <a href="index.html">
+                <img class="nav_logo" src="Images/SummerLogo.png" alt="">
+            </a>
+        </div>
+
+        <div class="nav__right">
+            <img src="Images/avatar.JPG" class="nav_avatar" alt="">
+        </div>
+
+    </div>
+
+<div class="information">
+    <h1 style="text-align:center">Copenhagen</h1>
+    <p style="text-align:center">June 21 2025 12pm-9.15pm</p>
+    <p>A day trip exploring Copenhagen. Visited "The Round Tower", "Rosenborg Castle" as seen in a couple photos, "The Little Mermaid" and a few other locations. Most notable spot was actually a "Church Of Scientology" building that was recruiting people.</p>
+</div>
+
+<h2 style="text-align:center">København</h2>
+
+<div class="container main-show">
+  <div class="mySlides">
+    <div class="numbertext">1 / 10</div>
+    <img src="Images/Denmark/Tivoli.JPG" style="width:30%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 10</div>
+    <img src="Images/Denmark/BarbieHouse.JPG" style="width:30%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 10</div>
+    <img src="Images/Denmark/Guard.JPG" style="width:30%">
+  </div>
+    
+  <!-- <div class="mySlides">
+    <div class="numbertext">4 / 11</div>
+    <img src="Images/Denmark/RosenborgCastle.JPG" style="width:50%">
+  </div> -->
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 10</div>
+    <img src="Images/Denmark/RosenborgAgain.JPG" style="width:30%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">5 / 10</div>
+    <img src="Images/Denmark/WrongFlagBro.JPG" style="width:30%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 10</div>
+    <img src="Images/Denmark/FountainAssWasher.JPG" style="width:30%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">7 / 10</div>
+    <img src="Images/Denmark/littleMermaid.JPG" style="width:30%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">8 / 10</div>
+    <img src="Images/Denmark/stillLittleMermaid.JPG" style="width:30%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">9 / 10</div>
+    <img src="Images/Denmark/DEATH.JPG" style="width:30%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">10 / 10</div>
+    <img src="Images/Denmark/FlightOut.JPG" style="width:30%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+<div class="container">    
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Images/Denmark/Tivoli.JPG" style="width:100%" onclick="currentSlide(1)" alt="Tivoli">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Denmark/BarbieHouse.JPG" style="width:100%" onclick="currentSlide(2)" alt="Barbie's house?">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Denmark/Guard.JPG" style="width:100%" onclick="currentSlide(3)" alt="Rosenborg Castle Guard">
+    </div>
+    <!-- <div class="column">
+      <img class="demo cursor" src="Images/Denmark/RosenborgCastle.JPG" style="width:100%" onclick="currentSlide(4)" alt="Rosenborg Castle">
+    </div> -->
+    <div class="column">
+      <img class="demo cursor" src="Images/Denmark/RosenborgAgain.JPG" style="width:100%" onclick="currentSlide(4)" alt="Rosenborg Castle">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="Images/Denmark/WrongFlagBro.JPG" style="width:100%" onclick="currentSlide(5)" alt="Italy??????">
+    </div>
+        <div class="column">
+      <img class="demo cursor" src="Images/Denmark/FountainAssWasher.JPG" style="width:100%" onclick="currentSlide(6)" alt="Fancy Ass Building">
+    </div>
+        <div class="column">
+      <img class="demo cursor" src="Images/Denmark/littleMermaid.JPG" style="width:100%" onclick="currentSlide(7)" alt="Little Mermaid">
+    </div>
+        <div class="column">
+      <img class="demo cursor" src="Images/Denmark/stillLittleMermaid.JPG" style="width:100%" onclick="currentSlide(8)" alt="Little Mermaid">
+    </div>
+        <div class="column">
+      <img class="demo cursor" src="Images/Denmark/DEATH.JPG" style="width:100%" onclick="currentSlide(9)" alt="Stickers">
+    </div>
+        <div class="column">
+      <img class="demo cursor" src="Images/Denmark/FlightOut.JPG" style="width:100%" onclick="currentSlide(10)" alt="Bye Bye Denmark">
+    </div>
+  </div>
+</div>
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+@font-face {
+  font-family: Playwrite SK;
+  src: url(fonts/PlaywriteSK-VariableFont_wght.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF;
+  font-family: Playwrite SK, sans-serif;
+}
+
+body{
+  
+  font-style: normal;
+  font-weight: 300;
+  background-color: #0B4EA2;
+}
+
+
+
+#banner{
+  color: white;
+  object-fit: contain;
+  height: 800px;
+  background-position: center center;
+  background-size: cover;
+}
+
+#banner_contents{
+  
+  margin-left: 70px;
+  margin-right: 70px;
+  padding-top: 1%;
+  height: 100%;
+  position: relative;
+}
+
+#banner_image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2%;
+  border: #FFFFFF 2px solid;
+}
+
+.nav{
+  position: fixed;
+  background-color: #FFFFFF;
+  top: 0;
+  padding: 20px 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  transition-timing-function: ease-in;
+  transition: all .5s;
+}
+
+.nav.active{
+  background-color: #FFFFFF;
+}
+
+#banner_details{
+  position: absolute;
+  bottom: 8px;
+  left: 12vw;
+}
+
+
+#banner_title{
+  font-size: 3rem;
+  font-weight: 800;
+  padding-bottom: 0.3rem;
+}
+
+
+
+#banner_desc{
+  width: 45rem;
+  line-height: 1.5;
+  padding-top: 1rem;
+  font-size: .9rem;
+  max-width: 360px;
+  height: 80px;
+}
+
+.nav_logo{
+  width: 120px;
+  padding-left: 20px;
+}
+
+.nav__left{
+  margin-left: 10px;
+
+}
+
+.nav__right{
+  position: fixed;
+  right: 20px;
+  display: flex;
+  margin-right: 10px;
+}
+
+.nav_avatar{
+  width: 35px;
+}
+
+#banner_button{
+  cursor: pointer;
+  color: white;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: .2vw;
+  padding-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-right: 2rem;
+  margin-right: 1rem;
+  padding-top: .5rem;
+  background-color: rgba(51,51,51,.5);
+  padding-bottom: .5rem;
+}
+
+#banner_button:hover{
+  color: black;
+  background-color: #e6e6e6;
+  transition: all .3s;
+}
+
+#banner_fadeBottom{
+  height: 25rem;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37,37,37, .61),
+    #EE1C25
+  );
+}
+
+.title{
+  text-align: center;
+  font-size: 50px;
+  margin-top: 10vh;
+}
+
+
+
+
+.container_text{
+  position: absolute;
+  bottom: 5vh;
+  left: 13vh;
+  font-size: 2rem;
+} 
+
+
+#myList{
+  color: white;
+  font-weight: 700;
+  padding-left: 60px;
+  margin-top: 40px;
+} 
+
+div.scroll-container {
+  position: relative;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  padding-top: 3vh;
+  padding-left: 60px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+  max-width: 20vw;
+  border-radius: 5%;
+  height: 13vw;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colmar</title>
+    <link rel="stylesheet" href="colmar.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="nav__left"> 
+            <a href="index.html">
+                <img class="nav_logo" src="Images/SummerLogo.png" alt="">
+            </a>
+        </div>
+
+        <div class="nav__right">
+            <img src="Images/avatar.JPG" class="nav_avatar" alt="">
+        </div>
+
+    </div>
+
+<div class="information">
+    <h1 style="text-align:center">Colmar</h1>
+    <br>
+    <p style="text-align:center">4th and 5th August 2025</p>
+    <br>
+    <p>Colmar is a town in the Grand Est region of northeastern France, near the border with Germany. I spent one full day here and walked through it again on the next. The creator of the "Statue Of Liberty" was born here. Beautiful town with truly good scenery and nice people.</p>
+</div>
+
+<h2 style="text-align:center">Colmar</h2>
+
+<div class="container main-show">
+  <div class="mySlides">
+    <div class="numbertext">1 / 10</div>
+    <img src="Images/France/Colmar Alley.JPG" style="width:30%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 10</div>
+    <img src="Images/France/Colmar empty street.JPG" style="width:30%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 10</div>
+    <img src="Images/France/Colmar La petit Venice.JPG" style="width:30%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 10</div>
+    <img src="Images/France/Colmar La Petit Venice 2.JPG" style="width:30%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">5 / 10</div>
+    <img src="Images/France/Colmar Tribunal.JPG" style="width:30%">
+  </div>
+
+    <div class="mySlides">
+    <div class="numbertext">6 / 10</div>
+    <img src="Images/France/Colmar FR suicide prevention.JPG" style="width:30%">
+  </div>
+
+    <div class="mySlides">
+    <div class="numbertext">7 / 10</div>
+    <img src="Images/France/Colmar french flag.JPG" style="width:30%">
+  </div>
+
+    <div class="mySlides">
+    <div class="numbertext">8 / 10</div>
+    <img src="Images/France/Colmar birb.JPG" style="width:30%">
+  </div>
+
+    <div class="mySlides">
+    <div class="numbertext">9 / 10</div>
+    <img src="Images/France/Colmar main sign.JPG" style="width:30%">
+  </div>
+
+    <div class="mySlides">
+    <div class="numbertext">10 / 10</div>
+    <img src="Images/France/Colmar M4A1E8 Sherman tank.JPG" style="width:30%">
+  </div>
+
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+<div class="container">    
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Images/France/Colmar Alley.JPG" style="width:100%" onclick="currentSlide(1)" alt=" Alley Toward The Church">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/France/Colmar empty street.JPG" style="width:100%" onclick="currentSlide(2)" alt=" Early Morning Empty Street">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/France/Colmar La petit Venice.JPG" style="width:100%" onclick="currentSlide(3)" alt="La Petit Venice">
+    </div>
+      <div class="column">
+      <img class="demo cursor" src="Images/France/Colmar La Petit Venice 2.JPG" style="width:100%" onclick="currentSlide(4)" alt="La Petit Venice">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="Images/France/Colmar Tribunal.JPG" style="width:100%" onclick="currentSlide(5)" alt="Tribunal Court Building">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/France/Colmar FR suicide prevention.JPG" style="width:100%" onclick="currentSlide(6)" alt="France Suicide Prevention Sticker">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/France/Colmar french flag.JPG" style="width:100%" onclick="currentSlide(7)" alt="French Flag">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/France/Colmar birb.JPG" style="width:100%" onclick="currentSlide(8)" alt="Birb">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/France/Colmar main sign.JPG" style="width:100%" onclick="currentSlide(9)" alt="Colmar sign with people on it">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/France/Colmar M4A1E8 Sherman tank.JPG" style="width:100%" onclick="currentSlide(10)" alt="Colmar M4A1E8 Sherman Tank">
+    </div>
+  </div>
+</div>
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</body>
+</html>

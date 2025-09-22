@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaysersberg</title>
+    <link rel="stylesheet" href="kaysersberg.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="nav__left"> 
+            <a href="index.html">
+                <img class="nav_logo" src="Images/SummerLogo.png" alt="">
+            </a>
+        </div>
+
+        <div class="nav__right">
+            <img src="Images/avatar.JPG" class="nav_avatar" alt="">
+        </div>
+
+    </div>
+
+<div class="information">
+    <h1 style="text-align:center">Kaysersberg</h1>
+    <br>
+    <p style="text-align:center">22nd July 2025 and 6th August 2025 + extra</p>
+    <br>
+    <p>Kaysersberg is a historical town and former commune in Alsace in northeastern France. The name is German for Emperor's Mountain. First town I properly visited in France, lived here with my cousin, aunt and her husband. In total I spent only around a week here. Beautiful town both in nature and architecture, this was my third time here and it's only getting better and better.</p>
+</div>
+
+<h2 style="text-align:center">Kaysersberg-Vignoble</h2>
+
+<div class="container main-show">
+  <div class="mySlides">
+    <div class="numbertext">1 / 10</div>
+    <img src="Images/France/overshotK.JPG" style="width:30%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 10</div>
+    <img src="Images/France/OvershotFogK.JPG" style="width:30%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 10</div>
+    <img src="Images/France/Francaise flagK.JPG" style="width:30%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 10</div>
+    <img src="Images/France/Fountain and church K.JPG" style="width:30%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">5 / 10</div>
+    <img src="Images/France/House near church K.JPG" style="width:30%">
+  </div>
+
+    <div class="mySlides">
+    <div class="numbertext">6 / 10</div>
+    <img src="Images/France/Angel K.JPG" style="width:30%">
+  </div>
+
+    <div class="mySlides">
+    <div class="numbertext">7 / 10</div>
+    <img src="Images/France/waterfallK.JPG" style="width:30%">
+  </div>
+
+    <div class="mySlides">
+    <div class="numbertext">8 / 10</div>
+    <img src="Images/France/Waterfall SIde K.JPG" style="width:30%">
+  </div>
+
+    <div class="mySlides">
+    <div class="numbertext">9 / 10</div>
+    <img src="Images/France/tower K.JPG" style="width:30%">
+  </div>
+
+    <div class="mySlides">
+    <div class="numbertext">10 / 10</div>
+    <img src="Images/France/wine bottles after a gathering K.JPG" style="width:30%">
+  </div>
+
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+<div class="container">    
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Images/France/overshotK.JPG" style="width:100%" onclick="currentSlide(1)" alt="Kaysersberg">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/France/OvershotFogK.JPG" style="width:100%" onclick="currentSlide(2)" alt="Kaysersberg with incoming rain">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/France/Francaise flagK.JPG" style="width:100%" onclick="currentSlide(3)" alt="French flag in Kaysersberg on top of a tower">
+    </div>
+      <div class="column">
+      <img class="demo cursor" src="Images/France/Fountain and church K.JPG" style="width:100%" onclick="currentSlide(4)" alt="Fountain and church in Kaysersberg">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="Images/France/House near church K.JPG" style="width:100%" onclick="currentSlide(5)" alt="House next to the church in Kaysersberg">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/France/Angel K.JPG" style="width:100%" onclick="currentSlide(6)" alt="Angel">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/France/waterfallK.JPG" style="width:100%" onclick="currentSlide(7)" alt="Waterfall">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/France/Waterfall SIde K.JPG" style="width:100%" onclick="currentSlide(8)" alt="Waterfall">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/France/tower K.JPG" style="width:100%" onclick="currentSlide(9)" alt="Tower">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/France/wine bottles after a gathering K.JPG" style="width:100%" onclick="currentSlide(10)" alt="Wine bottles after a gathering near Kaysersberg">
+    </div>
+  </div>
+</div>
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</body>
+</html>

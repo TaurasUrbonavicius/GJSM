@@ -1,13 +1,104 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    
-    <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summer</title>
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="main.css"/>
+    <script src="app.js"></script>
+
+  </head>
+  <body>
+
+    <!-- navbar section -->
+    <div class="nav">
+      <div class="nav__left">
+        <a href="index.html">
+        <img class="nav_logo" src="Images/SummerLogo.png" alt="">
+        </a>
+      </div>
+
+      <div class="nav__right">
+        <img src="Images/avatar.JPG" class="nav_avatar" alt="">
+      </div>
+
+    </div>
+
+
+    <!-- banner section -->
+    <header id="banner">
+      <div id="banner_contents">
+        <img id="banner_image" src="Images/Denmark/RosenborgCastle.JPG" alt="RosenborgCastle">
+        <div id="banner_details">
+          <h1 id="banner_title">Denmark</h1>
+          <div id="banner_buttons">
+          <button onclick="location.href='denmark.html'" id="banner_button" type="button">Play</button>
+          <button onclick="location.href='#myList'" id="banner_button" type="button">My List</button>
+        </div>
+      </div>
+
+      <!-- <p id="banner_desc">triple strike</p> -->
+      </div>
+
+      <div id="banner_fadeBottom"></div>
+    </header>
+
+    <!-- <div>
+      
+      <div class="container">
+        <h1 id="myList">My List ></h1>
+        <div class="container_copenhagen">
+          <a href="denmark.html" class="copenhagen_link">
+            <img src="Images/Denmark/DanishFlag.png" alt="Denmark">
+            <h3 class="container_text">Denmark</h3>
+          </a>
+        </div>
+        
+      </div>
+    </div> -->
+    <h1 id="myList">My List ></h1>
+    <div class="scroll-container">
+      <a href="lithuania.html" class="lithuania">
+        <img src="Images/Lituanie.JPG" alt="Lithuania">
+      </a>
+      <a href="denmark.html" class="denmark">
+      <img src="Images/Denmark/DanishFlag.png" alt="Denmark">
+      </a>
+      <a href="france.html" class="france">
+        <img src="Images/Francais.png" alt="France">
+      </a>
+      <a href="germany.html" class="germany">
+        <img src="Images/Alemagne.png" alt="Germany">
+      </a>
+      <a href="switzerland.html" class="switzerland">
+        <img src="Images/Suisse.png" alt="Switzerland">
+      </a>
+      <a href="austria.html" class="austria">
+        <img src="Images/Austria.png" alt="Austria">
+      </a>
+      <a href="slovakia.html" class="slovakia">
+        <img src="Images/Slovak.png" alt="Slovakia">
+      </a>
+      <a href="poland.html" class="poland">
+        <img src="Images/upperAustria.png" alt="Poland">
+      </a>
+      <a href="latvia.html" class="latvia">
+        <img src="Images/Latvia.png" alt="Latvia">
+      </a>
+  </div>
+
+
+    <script>
+      window.addEventListener("scroll",function(){
+
+        var nav = document.querySelector(".nav");
+        nav.classList.toggle("active", window.scrollY > 0);
+      })
+      
+    </script>
+  </body>
 </html>

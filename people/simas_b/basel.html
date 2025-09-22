@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basel</title>
+    <link rel="stylesheet" href="basel.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="nav__left"> 
+            <a href="index.html">
+                <img class="nav_logo" src="Images/SummerLogo.png" alt="">
+            </a>
+        </div>
+
+        <div class="nav__right">
+            <img src="Images/avatar.JPG" class="nav_avatar" alt="">
+        </div>
+
+    </div>
+
+<div class="information">
+    <h1 style="text-align:center">Basel</h1>
+    <br>
+    <p style="text-align:center">8th August 2025</p>
+    <br>
+    <p>Basel is a city in Switzerland right on the wall with France and Germany. I mainly wanted to go here because this year's eurovision happened here and the city is gorgeous albeit small. On the day I was there, there was a market happening in front of the town hall but my favourite part was the bubble man. Also someone tried to scam me...</p>
+</div>
+
+<h2 style="text-align:center">Basel</h2>
+
+<div class="container main-show">
+  <div class="mySlides">
+    <div class="numbertext">1 / 8</div>
+    <img src="Images/Switzerland/Town Hall.JPG" style="width:30%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 8</div>
+    <img src="Images/Switzerland/Bridge.JPG" style="width:30%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 8</div>
+    <img src="Images/Switzerland/Twin towers.JPG" style="width:30%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 8</div>
+    <img src="Images/Switzerland/bubble man.JPG" style="width:30%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">5 / 8</div>
+    <img src="Images/Switzerland/bubbles.JPG" style="width:30%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">6 / 8</div>
+    <img src="Images/Switzerland/tower.JPG" style="width:30%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">7 / 8</div>
+    <img src="Images/Switzerland/Dino game.JPG" style="width:30%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">8 / 8</div>
+    <img src="Images/Switzerland/Lust.JPG" style="width:30%">
+  </div>
+
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+<div class="container">    
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Images/Switzerland/Town Hall.JPG" style="width:100%" onclick="currentSlide(1)" alt="Basel town hall">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Switzerland/Bridge.JPG" style="width:100%" onclick="currentSlide(2)" alt="Bridge">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Switzerland/Twin towers.JPG" style="width:100%" onclick="currentSlide(3)" alt="Twin Towers">
+    </div>
+      <div class="column">
+      <img class="demo cursor" src="Images/Switzerland/bubble man.JPG" style="width:100%" onclick="currentSlide(4)" alt="Joyful Bubble Man">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="Images/Switzerland/bubbles.JPG" style="width:100%" onclick="currentSlide(5)" alt="Bubbles">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Switzerland/tower.JPG" style="width:100%" onclick="currentSlide(6)" alt="Tower">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Switzerland/Dino game.JPG" style="width:100%" onclick="currentSlide(7)" alt="So Switzerland isn't a part of the EU...">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Switzerland/Lust.JPG" style="width:100%" onclick="currentSlide(8)" alt="Lust">
+    </div>
+  </div>
+</div>
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</body>
+</html>

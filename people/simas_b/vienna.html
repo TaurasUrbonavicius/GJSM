@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vienna</title>
+    <link rel="stylesheet" href="vienna.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="nav__left"> 
+            <a href="index.html">
+                <img class="nav_logo" src="Images/SummerLogo.png" alt="">
+            </a>
+        </div>
+
+        <div class="nav__right">
+            <img src="Images/avatar.JPG" class="nav_avatar" alt="">
+        </div>
+
+    </div>
+
+<div class="information">
+    <h1 style="text-align:center">Vienna</h1>
+    <br>
+    <p style="text-align:center">9th August 2025</p>
+    <br>
+    <p>Vienna the capital of Austria. MAN IT WAS HOT THERE. Almost burned up but did see the city and it was really nice, do need to come again in the future and check it out more. A TON of different flags all around.</p>
+</div>
+
+<h2 style="text-align:center">Vienna</h2>
+
+<div class="container main-show">
+  <div class="mySlides">
+    <div class="numbertext">1 / 5</div>
+    <img src="Images/Austria/St. Charles's Church.JPG" style="width:30%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 5</div>
+    <img src="Images/Austria/Opera house.JPG" style="width:30%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 5</div>
+    <img src="Images/Austria/Flags.JPG" style="width:30%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 5</div>
+    <img src="Images/Austria/Beauty.JPG" style="width:30%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">5 / 5</div>
+    <img src="Images/Austria/Belvedere Palace.JPG" style="width:30%">
+  </div>
+
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+<div class="container">    
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Images/Austria/St. Charles's Church.JPG" style="width:100%" onclick="currentSlide(1)" alt="St. Charle's Church in the city center">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Austria/Opera house.JPG" style="width:100%" onclick="currentSlide(2)" alt="Vienna Opera House">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Austria/Flags.JPG" style="width:100%" onclick="currentSlide(3)" alt="Flags">
+    </div>
+      <div class="column">
+      <img class="demo cursor" src="Images/Austria/Beauty.JPG" style="width:100%" onclick="currentSlide(4)" alt="1950s Ford Thunderbird ">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="Images/Austria/Belvedere Palace.JPG" style="width:100%" onclick="currentSlide(5)" alt="Belvedere Palace">
+    </div>
+  </div>
+</div>
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</body>
+</html>
