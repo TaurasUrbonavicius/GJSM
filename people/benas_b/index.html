@@ -12,62 +12,75 @@
             <div class="title">
                 <h1>Benas B</h1>
                 <p>Welcome to my personal page!</p>
+                <p>Click any of the three tabs below!</p>
             </div>
             <ul class="intro-list">
-                <li>
+                <li id="about-me-link">
                     <h2>Who am I?</h2>
                     <p>Click here to get more info about me.</p>
                 </li>
-                <li>
+                <li id="site-info-link">
                     <h2>What is this page?</h2>
                     <p>Click here to get more information about this page.</p>
                 </li>
-                <li>
+                <li id="events-link">
                     <h2>Events over the summer..</h2>
                     <p>Click here for the main purpose of this page!</p>
                 </li>
             </ul>
         </aside>
         <main>
-            <section class="about-me" style="display: none;">
-                <h2>About me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum.</p>
+            <section class="about-me" id="about-me-tab" style="display: none;">
+                <h2>About me...</h2>
+                <p>Heya, I'm Benas Bereiša. I am a student at KITM, a school situated in Kaunas, Lithuania.
+                    I am currently in my final year of high school, and I am planning to pursue a career in computer science.
+                    Though my interests may remain centered around video games, web development is something I wish to explore more in depth.
+                </p>
             </section>
-            <section class="contacts" style="display: none;">
-                <h2>Contacts</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum.</p>
+            <section class="site-info" id="site-info-tab" style="display: none;">
+                <h2>About this page...</h2>
+                <p>This website was made to showcase my achievements over the summer of 2025, which can be viewed
+                    by clicking on the third tab on the left. The site itself was made using HTML, CSS and JavaScript.
+                </p>
             </section>
-            <section class="events">
+            <section class="events" id="events-tab" style="display: none;">
                 <div class="event-1">
-                    <img src="..." alt="Event Image">
-                    <h3>eventName</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, iusto necessitatibus. Id eos placeat incidunt ea neque temporibus enim laborum.</p>
+                    <img src="images (5).jpeg" alt="Event Image">
+                    <h3>Summer work</h3>
+                    <p>During summer, I took up several job opportunities from a website called Workis. Most of my work included customer service, such as working the cashier, restocking shelves, though at one point I did stagehand work at the stadium where Post Malone held his world tour. Fun times.</p>
                 </div>
                 <div class="event-2">
-                    <img src="..." alt="Event Image">
-                    <h3>eventName</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, amet? Dolorum ipsum ducimus distinctio nobis. Eos mollitia neque maxime rerum?</p>
+                    <img src="zil1-1024x683.jpg" alt="Event Image">
+                    <h3>Summer camp</h3>
+                    <p>At around the start of august, from around the 5th all the way to the 14th, I was away at a summer camp called "Žilvitis". T'was a fun time, but having gone there so many times in the past during my childhood, it got tiring real fast. That being said, this year was my final time ever going there, so I can't complain either.</p>
                 </div>
                 <div class="event-3">
-                    <img src="..." alt="Event Image">
-                    <h3>eventName</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsum nulla dolorem architecto deleniti amet, ex reiciendis repellat iste aut?</p>
+                    <img src="gaming-addiction-xbox-controller.png" alt="Event Image">
+                    <h3>Gaming</h3>
+                    <p>Throughout the entirety of summer, as to be expected, I spent a lot of my time playing video games. Obviously. Not a lot to say here.</p>
                 </div>
                 <div class="event-4">
-                    <img src="..." alt="Event Image">
-                    <h3>eventName</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur distinctio minima corrupti earum ad sed eius incidunt cupiditate atque optio.</p>
+                    <img src="l0619d16207259079887.jpg" alt="Event Image">
+                    <h3>Sleeping</h3>
+                    <p>Rest is good for the body. That being said, sleeping in warm, dry environments is not fun whatsoever. Seriously. It is not fun at all. I had to invest in a damn desk fan just so I wouldn't drown in my sweat.</p>
                 </div>
                 <div class="event-5">
-                    <img src="..." alt="Event Image">
-                    <h3>eventName</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex nam tempora sed. Iusto ducimus aut voluptates dolore dicta. Culpa?</p>
+                    <img src="Cycling-is-Beneficial-1024x576.png" alt="Event Image">
+                    <h3>Cycling</h3>
+                    <p>Though you might not expect it out of me, I found cycling to be quite fun. T'was honestly very relaxing zooming down the sidewalks, even though I did tear the chain around the gears when I pressed the pedal too hard whilst switching gears riding uphill.</p>
                 </div>
                 <div class="event-6">
-                    <img src="..." alt="Event Image">
-                    <h3>eventName</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum.</p>
+                    <img src="elementor-placeholder-image.png" alt="Event Image">
+                    <h3>... I dunno, man.</h3>
+                    <p>Look, I would have made it five events, but six is an even number and it looks better this way.</p>
                 </div>
+            </section>
+            <div class="overlay-bg" id="overlay-bg" style="display: none;"></div>
+            <section class="overlay-display" id="overlay-content" style="display: none;">
+                <input type="button" value="X" id="overlay-close-button">
+                <h2>eventTitle</h2>
+                <img src="elementor-placeholder-image.png" alt="Event Image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est atque corporis doloremque rem sunt quisquam dolorum recusandae, eveniet laborum repudiandae beatae accusamus. Natus consequuntur pariatur recusandae laboriosam. Quas veritatis magni, nulla hic cumque quaerat praesentium id molestiae corporis. Ex repudiandae iusto quis temporibus. Ut sequi rerum illum eligendi impedit itaque.</p>
             </section>
         </main>
     </div>
