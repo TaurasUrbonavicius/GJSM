@@ -57,3 +57,7 @@ Dedecated cards are for you. You can change the text in them, text size, etc.
 It's not recommended that you touch the styling of your card!
 
 Please do not damage or do any other actions which may or might harm other people's projects!
+
+
+
+New changes
